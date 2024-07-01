@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo Play', sans-serif;
+    color: #fff;
+}
+/*centrar contenido con flexbox*/
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    background: url(./images/lum3n--RBuQ2PK_L8-unsplash.jpg);
+}
+h1 {
+    padding: 20px 0;
+    letter-spacing: 2px;
+    
+}
+.contenedor {
+    width: 700px;
+    min-height: 500px;
+    padding: 20px;
+    border: 3px solid #ddd3d3;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: #aaa1a16a;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+
+}
+input {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 20px; /* Agregar margen inferior */
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 0.5px solid #fff;
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.324);
+    background-color: transparent/*rgba(255, 255, 255, 0.523)*/;
+}
+input:valid {
+  background-color: transparent;
+}
+
+/*boton*/
+button {
+    width: 25%;
+    height: 40px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 10px;
+    border:0.5px solid #fff;
+    margin-top: 10px; /* Agregar margen inferior */
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+button:hover {
+  background-color: #fff;
+  color: red;
+}
+
+/*Lista de tareas*/
+
+#lista-de-tareas {
+    width: 80%;
+    margin-top: 20px;
+  }
+  
+  /* Tareas individuales */
+  
+  .tarea {
+    width: 100%;
+    min-height: 10px;
+    font-size: 1.1em;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: transparent;
+    border: 0.5px solid red;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  /* Estilo para tarea completada */
+  
+  .tarea.completada {
+    text-decoration: line-through;
+    color: red;
+    border: 0.5px solid #fff;;
+  }
+  
+  .tarea p {
+    max-width: 350px;
+  }
+  
+  /* Iconos */
+  
+  i {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /*.icono-completar {
+    color: rgb(0, 255, 0);
+  }
+  
+  .icono-eliminar {
+    color: rgb(255, 255, 255);
+  }*/
+  
+  .icono-completar:hover,
+  .icono-eliminar:hover {
+    background-color: rgba(255, 255, 255, 0.523);
+  }
