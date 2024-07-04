@@ -10,7 +10,7 @@ A simple To-Do list for practicing.
 - CSS custom properties
 - Google Fonts
 - Flexbox
-- Javascript Vanilla
+- Vanilla Javascript
 
 
   
